@@ -63,13 +63,13 @@ export default function CityShowcase() {
           },
         });
       });
-    });
+    }, section);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden bg-surface-primary">
+    <section ref={sectionRef} className="relative overflow-clip bg-surface-primary">
       {/* Header */}
       <div className="city-section-label absolute top-8 left-4 md:left-8 z-20 opacity-0">
         <span
