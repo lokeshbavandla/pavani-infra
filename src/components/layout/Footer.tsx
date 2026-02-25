@@ -152,7 +152,7 @@ export default function Footer() {
             end: "top 50%",
             scrub: 0.8,
           },
-        }
+        },
       );
 
       /* Sunburst arcs draw */
@@ -181,7 +181,7 @@ export default function Footer() {
             end: "top 50%",
             scrub: 0.6,
           },
-        }
+        },
       );
       gsap.fromTo(
         ".footer-frame-v",
@@ -196,7 +196,7 @@ export default function Footer() {
             end: "top 40%",
             scrub: 0.8,
           },
-        }
+        },
       );
 
       /* ── 3. Closing statement per-word reveal ── */
@@ -216,7 +216,7 @@ export default function Footer() {
             end: "top 65%",
             scrub: 0.6,
           },
-        }
+        },
       );
 
       /* ── 5. Logo and back-to-top fade in ── */
@@ -235,7 +235,7 @@ export default function Footer() {
             end: "top 55%",
             scrub: 0.6,
           },
-        }
+        },
       );
 
       /* ── 6. Gold separator line with diamond ── */
@@ -252,7 +252,7 @@ export default function Footer() {
             end: "top 70%",
             scrub: 0.6,
           },
-        }
+        },
       );
 
       /* ── 7. Content columns stagger in ── */
@@ -271,7 +271,7 @@ export default function Footer() {
             end: "top 60%",
             scrub: 0.6,
           },
-        }
+        },
       );
 
       /* ── 8. Social icons pop in with rotation ── */
@@ -291,7 +291,7 @@ export default function Footer() {
             end: "top 75%",
             scrub: 0.5,
           },
-        }
+        },
       );
 
       /* ── 9. Ornament fades in ── */
@@ -308,7 +308,7 @@ export default function Footer() {
             end: "top 72%",
             scrub: 0.5,
           },
-        }
+        },
       );
 
       /* ── 10. Office constellation dots pulse ── */
@@ -335,7 +335,7 @@ export default function Footer() {
             end: "top 85%",
             scrub: 0.4,
           },
-        }
+        },
       );
     }, footer);
 
@@ -443,7 +443,8 @@ export default function Footer() {
                 style={{
                   fontFamily: "var(--font-display-custom)",
                   transformStyle: "preserve-3d",
-                  color: i === 1 || i === 4 ? "#DFC063" : "rgba(255,255,255,0.85)",
+                  color:
+                    i === 1 || i === 4 ? "#DFC063" : "rgba(255,255,255,0.85)",
                 }}
               >
                 {word}
@@ -626,7 +627,7 @@ export default function Footer() {
             className="text-white/20 text-[10px] tracking-wider"
             style={{ fontFamily: "var(--font-mono-custom)" }}
           >
-            Designed & Developed by Realatte
+            Designed & Developed by Lokesh Bavandla
           </p>
         </div>
       </div>
