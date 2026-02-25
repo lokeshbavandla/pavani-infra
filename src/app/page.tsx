@@ -8,6 +8,7 @@ import Hero from "@/components/sections/Hero";
 import StatsCounter from "@/components/sections/StatsCounter";
 import FeaturedProjects from "@/components/sections/FeaturedProjects";
 import LegacySection from "@/components/sections/LegacySection";
+import CityShowcase from "@/components/sections/CityShowcase";
 import Testimonials from "@/components/sections/Testimonials";
 import BlogInsights from "@/components/sections/BlogInsights";
 import ContactForm from "@/components/sections/ContactForm";
@@ -15,11 +16,6 @@ import ContactForm from "@/components/sections/ContactForm";
 const Preloader = dynamic(() => import("@/components/sections/Preloader"), {
   ssr: false,
 });
-
-const CityShowcase = dynamic(
-  () => import("@/components/sections/CityShowcase"),
-  { ssr: false },
-);
 
 const SmoothScrollProvider = dynamic(
   () => import("@/components/providers/SmoothScrollProvider"),

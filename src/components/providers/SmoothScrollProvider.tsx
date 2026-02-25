@@ -32,20 +32,24 @@ export default function SmoothScrollProvider({
     gsap.ticker.add(rafCallback);
     gsap.ticker.lagSmoothing(0);
 
-    // Refresh ScrollTrigger after all dynamic content settles.
-    // Multiple passes: immediate, after paint, and a delayed one for lazy-loaded content.
+    // Refresh ScrollTrigger after all content settles.
+    // Sort ensures pinned triggers process in correct DOM order.
+    ScrollTrigger.sort();
     ScrollTrigger.refresh();
 
     const raf = requestAnimationFrame(() => {
+      ScrollTrigger.sort();
       ScrollTrigger.refresh();
     });
 
     const timer = setTimeout(() => {
+      ScrollTrigger.sort();
       ScrollTrigger.refresh();
     }, 1500);
 
     // Also refresh on images/fonts finishing load
     const onLoad = () => {
+      ScrollTrigger.sort();
       ScrollTrigger.refresh();
     };
     window.addEventListener("load", onLoad);
